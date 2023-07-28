@@ -1,4 +1,4 @@
-# 7-base_geometry.py
+#!/usr/bin/python3
 
 class BaseGeometry:
     """The base class of all Geometry"""
