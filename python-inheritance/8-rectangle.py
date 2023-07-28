@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-This program use the inherit for create Rectangle
-"""
+"""This program use the inherit for create Rectangle"""
 
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
