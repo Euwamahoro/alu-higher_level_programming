@@ -1,3 +1,13 @@
-#!/bin/bash
-# Send the POST request with the specified variables and display the body of the response
-curl -s -X POST -d "email=test@gmail.com&subject=I%20will%20always%20be%20here%20for%20PLD" "$1"
+#!/usr/bin/python3
+"""Displays the X-Request-Id header variable of a request to a given URL.
+Usage: ./5-hbtn_header.py <URL>
+"""
+import sys
+import requests
+
+
+if __name__ == "__main__":
+    url = sys.argv[1]
+
+    r = requests.get(url)
+    print(r.headers.get("X-Request-Id"))
