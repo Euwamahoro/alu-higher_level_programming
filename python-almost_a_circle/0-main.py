@@ -1,20 +1,24 @@
 #!/usr/bin/python3
 """ 0-main """
+import unittest
 from models.base import Base
 
+class TestBase(unittest.TestCase):
+    def test_auto_assign_id(self):
+        b1 = Base()
+        self.assertEqual(b1.id, 1)
+
+        b2 = Base()
+        self.assertEqual(b2.id, 2)
+
+        b3 = Base()
+        self.assertEqual(b3.id, 3)
+
+        b4 = Base(12)
+        self.assertEqual(b4.id, 12)
+
+        b5 = Base()
+        self.assertEqual(b5.id, 4)
+
 if __name__ == "__main__":
-
-    b1 = Base()
-    print(b1.id)
-
-    b2 = Base()
-    print(b2.id)
-
-    b3 = Base()
-    print(b3.id)
-
-    b4 = Base(12)
-    print(b4.id)
-
-    b5 = Base()
-    print(b5.id)
+    unittest.main()
