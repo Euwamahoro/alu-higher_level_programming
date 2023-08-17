@@ -3,7 +3,7 @@
 class for a square
 By: Enock dev
 """
-from models.rectangle import Rectangle
+from .base import Base
 
 
 class Square(Rectangle):
