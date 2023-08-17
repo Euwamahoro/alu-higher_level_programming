@@ -5,7 +5,6 @@ By: Enock dev
 """
 import unittest
 import pep8
-from models.base import Base
 from models.rectangle import Rectangle
 
 
