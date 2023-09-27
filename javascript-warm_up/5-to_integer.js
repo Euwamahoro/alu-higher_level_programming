@@ -6,5 +6,5 @@ if (/^-?\d+$/.test(firstArg)) {
   const intValue = parseInt(firstArg); // Convert to an integer
   console.log(`My number: ${intValue}`);
 } else {
-  console.log("Not a number");
+  console.log('Not a number');
 }
