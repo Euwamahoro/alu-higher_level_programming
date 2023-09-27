@@ -1,13 +1,15 @@
 #!/usr/bin/node
 
-if (process.argv.length === 2) {
+if (process.argv.length <= 2) {
     console.log(0);
-} else if (process.argv.length > 2) {
-    let maxNumber = parseInt(process.argv[2]);
-    for (let i = 3; i < process.argv.length; i++) {
-        const currentNumber = parseInt(process.argv[i]);
-        if (currentNumber > maxNumber) {
-            maxNumber = currentNumber;
-        }
+} else if (process.argv.length === 3) {
+    console.log(0);
+} else {
+    const integers = process.argv.slice(2).map(Number).filter(Number.isInteger);
+    if (integers.length < 2) {
+        console.log(0);
+    } else {
+        integers.sort((a, b) => b - a);
+        console.log(integers[1]);
     }
-    console.log(maxNumber);}
+}
