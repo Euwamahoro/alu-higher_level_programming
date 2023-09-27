@@ -2,7 +2,7 @@
 
 const input = parseInt(process.argv[2]);
 
-function computeFactorial( n ) {
+function computeFactorial (n) {
   if (isNaN(n) || n === 0) {
     return 1;
   }
