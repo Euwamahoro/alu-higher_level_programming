@@ -7,4 +7,3 @@ if (process.argv[2] !== undefined && process.argv[3] !== undefined) {
   const arg2 = process.argv[3] === undefined ? process.argv[3] : 'HBTN';
   console.log(arg1 + ' is ' + arg2);
 }
-
