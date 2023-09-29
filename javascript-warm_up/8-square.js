@@ -3,15 +3,15 @@
 const size = parseInt(process.argv[2]);
 
 if (isNaN(size)) {
-  console.log("Missing size");
+  console.log('Missing size');
 } else {
   if (size <= 0) {
     // No need to print anything if size is less than or equal to 0
   } else {
     for (let i = 0; i < size; i++) {
-      let line = "";
+      let line = '';
       for (let j = 0; j < size; j++) {
-        line += "X";
+        line += 'X';
       }
       console.log(line);
     }
