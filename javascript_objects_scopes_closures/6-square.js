@@ -18,4 +18,4 @@ class Square extends Rectangle{
     }
 }
 
-module.exports = 5-Square.js;
+module.exports = Square;
