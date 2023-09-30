@@ -1,11 +1,12 @@
 #!/usr/bin/node
 
 class Rectangle {
-  constructor(w, h) {
+  constructor (w, h) {
     if (w <= 0 || h <= 0) {
-      this.width = undefined;
-      this.height = undefined;
+      // Create an empty object
+      return {};
     } else {
+      // Initialize width and height attributes
       this.width = w;
       this.height = h;
     }
